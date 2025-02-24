@@ -1,0 +1,87 @@
+@font-face {
+  font-family: inter;
+  src: url(../fonts/static/Inter-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 8%);
+  display: grid;
+  place-content: center;
+  /* height: 100vh; */
+  font-size: 14px;
+  padding: 20px;
+}
+.profile-box {
+  max-width: 450px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.profile-img {
+  text-align: center;
+}
+.profile-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-img h1 {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  padding: 10px 0;
+  font-family: inter;
+}
+.profile-img p {
+  color: hsl(75, 94%, 57%);
+  font-family: inter;
+}
+.profile-btn {
+  text-align: center;
+}
+.profile-btn p {
+  font-family: inter;
+  color: hsl(0, 0%, 100%);
+  padding: 20px 0;
+}
+.profile-btn a {
+  display: block;
+  padding: 10px 0;
+  background-color: hsl(0, 0%, 20%);
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-family: inter;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: all 0.5s ease-in-out;
+}
+.profile-btn a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+
+footer {
+  /* padding: 25px 0; */
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-family: inter;
+}
+footer a {
+  color: inherit;
+}
+footer a:hover {
+  color: hsl(75, 94%, 57%);
+}
+
+@media (min-width: 500px) {
+  body {
+    height: 100vh;
+  }
+}
